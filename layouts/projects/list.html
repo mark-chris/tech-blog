@@ -1,0 +1,22 @@
+{{ define "main" }}
+  <div class="posts">
+    <h1>Projects</h1>
+    {{ range .Pages }}
+      <article class="post on-list">
+        <h1 class="post-title">
+          <a href="{{ .Params.url | default .RelPermalink }}">{{ .Title }}</a>
+        </h1>
+        <div class="post-content">
+          {{ .Summary }}
+        </div>
+        {{ with .Params.tags }}
+          <div>
+            {{ range . }}
+              <span class="post-tag">#{{ . }}</span>
+            {{ end }}
+          </div>
+        {{ end }}
+      </article>
+    {{ end }}
+  </div>
+{{ end }}
