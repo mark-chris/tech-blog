@@ -2,3 +2,12 @@
 public/
 resources/
 .hugo_build.lock
+
+# Sensitive files
+.env
+.env.*
+*.pem
+*.key
+
+# Local tooling
+.claude/
