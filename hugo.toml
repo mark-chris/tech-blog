@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://markchristensen.dev/"
 languageCode = "en-us"
 pagination.pagerSize = 5
 
